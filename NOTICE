@@ -1,0 +1,306 @@
+-------------------------------------------------------------------------------
+
+The software covered by this notice file is subject to copyright owned by Cloudera.
+
+The following notices and licenses apply to various third party software packages, including open source software packages in the software accompanying this notice file.
+
+================================================================================
+================================================================================
+
+
+
+================================================================================
+
+                                  Dependencies
+
+================================================================================
+
+- numpy (2.5.4) [BSD-3-Clause]
+- pytest (9.1.1) [MIT]
+- requests (2.34.2) [MIT]
+- urllib3 (2.8.0) [MIT]
+
+--------------------------------------------------------------------------------
+Package Title: numpy (2.5.4)
+
+Package Locator: pip+numpy$2.5.4
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.svg" width="300">
+</h1><br>
+
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](
+https://numfocus.org)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/numpy.svg?label=PyPI%20downloads)](
+https://pypi.org/project/numpy/)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/numpy.svg?label=Conda%20downloads)](
+https://anaconda.org/conda-forge/numpy)
+[![Stack Overflow](https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg)](
+https://stackoverflow.com/questions/tagged/numpy)
+[![Nature Paper](https://img.shields.io/badge/DOI-10.1038%2Fs41592--019--0686--2-blue)](
+https://doi.org/10.1038/s41586-020-2649-2)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/numpy/numpy/badge)](https://api.securityscorecards.dev/projects/github.com/numpy/numpy)
+
+
+NumPy is the fundamental package for scientific computing with Python.
+
+- **Website:** https://www.numpy.org
+- **Documentation:** https://numpy.org/doc
+- **Mailing list:** https://mail.python.org/mailman/listinfo/numpy-discussion
+- **Source code:** https://github.com/numpy/numpy
+- **Contributing:** https://www.numpy.org/devdocs/dev/index.html
+- **Bug reports:** https://github.com/numpy/numpy/issues
+- **Report a security vulnerability:** https://tidelift.com/docs/security
+
+It provides:
+
+- a powerful N-dimensional array object
+- sophisticated (broadcasting) functions
+- tools for integrating C/C++ and Fortran code
+- useful linear algebra, Fourier transform, and random number capabilities
+
+Testing:
+
+NumPy requires `pytest` and `hypothesis`.  Tests can then be run after installation with:
+
+    python -c "import numpy, sys; sys.exit(numpy.test() is False)"
+
+Code of Conduct
+----------------------
+
+NumPy is a community-driven open source project developed by a diverse group of
+[contributors](https://numpy.org/teams/). The NumPy leadership has made a strong
+commitment to creating an open, inclusive, and positive community. Please read the
+[NumPy Code of Conduct](https://numpy.org/code-of-conduct/) for guidance on how to interact
+with others in a way that makes our community thrive.
+
+Call for Contributions
+----------------------
+
+The NumPy project welcomes your expertise and enthusiasm!
+
+Small improvements or fixes are always appreciated. If you are considering larger contributions
+to the source code, please contact us through the [mailing
+list](https://mail.python.org/mailman/listinfo/numpy-discussion) first.
+
+Writing code isn’t the only way to contribute to NumPy. You can also:
+- review pull requests
+- help us stay on top of new and old issues
+- develop tutorials, presentations, and other educational materials
+- maintain and improve [our website](https://github.com/numpy/numpy.org)
+- develop graphic design for our brand assets and promotional materials
+- translate website content
+- help with outreach and onboard new contributors
+- write grant proposals and help with other fundraising efforts
+
+For more information about the ways you can contribute to NumPy, visit [our website](https://numpy.org/contribute/). 
+If you’re unsure where to start or how your skills fit in, reach out! You can
+ask on the mailing list or here, on GitHub, by opening a new issue or leaving a
+comment on a relevant issue that is already open.
+
+Our preferred channels of communication are all public, but if you’d like to
+speak to us in private first, contact our community coordinators at
+numpy-team@googlegroups.com or on Slack (write numpy-team@googlegroups.com for
+an invitation).
+
+We also have a biweekly community call, details of which are announced on the
+mailing list. You are very welcome to join.
+
+If you are new to contributing to open source, [this
+guide](https://opensource.guide/how-to-contribute/) helps explain why, what,
+and how to successfully get involved.
+
+
+
+
+* Declared Licenses *
+BSD-3-Clause
+
+* Copyrights *
+BSD-3-Clause
+- Copyright (c) 2005-2022 NumPy Developers.
+
+* Package Info *
+
+Package Manager: Pip
+Project URL: https://www.numpy.org
+Package Download URL: https://files.pythonhosted.org/packages/95/b0/c7453d0b6e2073c3264468b106ee1563750cecc910965e67357e3698c83e/numpy-2.5.4.tar.gz
+Dependency Path: numpy
+
+--------------------------------------------------------------------------------
+Package Title: pytest (9.1.1)
+
+Package Locator: pip+pytest$9.1.1
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+pytest: simple powerful testing with Python
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- doc/en/license.rst
+  - Copyright (c) 2004 Holger Krekel and others
+- LICENSE
+  - Copyright (c) 2004 Holger Krekel and others
+- testing/example_scripts/junit-10.xsd
+  - Copyright (c) 2014 Gregory Boissinot
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2004 Holger Krekel and others
+- Copyright (c) 2014 Gregory Boissinot
+
+* Package Info *
+
+Authors: Brianna Laugher, Bruno Oliveira, Floris Bruynooghe, Freya Bruhin, Holger Krekel, Others (See AUTHORS), Ronny Pfannschmidt
+Package Manager: Pip
+Project URL: https://pypi.org/project/pytest/
+Package Download URL: https://files.pythonhosted.org/packages/e4/47/b9efed96c114afcfa3c9d3fe98a76a1d14c74a9e266d397cf6eb64be5e01/pytest-9.1.1.tar.gz
+Dependency Path: pytest
+
+--------------------------------------------------------------------------------
+Package Title: requests (2.34.2)
+
+Package Locator: pip+requests$2.34.2
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+# Requests
+
+**Requests** is a simple, yet elegant, HTTP library.
+
+```python
+>>> import requests
+>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+>>> r.encoding
+'utf-8'
+>>> r.text
+'{"authenticated": true, ...'
+>>> r.json()
+{'authenticated': True, ...}
+```
+
+Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your `PUT` & `POST` data — but nowadays, just use the `json` method!
+
+Requests is one of the most downloaded Python packages today, pulling in around `30M downloads / week`— according to GitHub, Requests is currently [depended upon](https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D) by `1,000,000+` repositories. You may certainly put your trust in this code.
+
+[![Downloads](https://pepy.tech/badge/requests/month)](https://pepy.tech/project/requests)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/requests.svg)](https://pypi.org/project/requests)
+[![Contributors](https://img.shields.io/github/contributors/psf/requests.svg)](https://github.com/psf/requests/graphs/contributors)
+
+## Installing Requests and Supported Versions
+
+Requests is available on PyPI:
+
+```console
+$ python -m pip install requests
+```
+
+Requests officially supports Python 3.7+.
+
+## Supported Features & Best–Practices
+
+Requests is ready for the demands of building robust and reliable HTTP–speaking applications, for the needs of today.
+
+- Keep-Alive & Connection Pooling
+- International Domains and URLs
+- Sessions with Cookie Persistence
+- Browser-style TLS/SSL Verification
+- Basic & Digest Authentication
+- Familiar `dict`–like Cookies
+- Automatic Content Decompression and Decoding
+- Multi-part File Uploads
+- SOCKS Proxy Support
+- Connection Timeouts
+- Streaming Downloads
+- Automatic honoring of `.netrc`
+- Chunked HTTP Requests
+
+## API Reference and User Guide available on [Read the Docs](https://requests.readthedocs.io)
+
+[![Read the Docs](https://raw.githubusercontent.com/psf/requests/main/ext/ss.png)](https://requests.readthedocs.io)
+
+## Cloning the repository
+
+When cloning the Requests repository, you may need to add the `-c
+fetch.fsck.badTimezone=ignore` flag to avoid an error about a bad commit (see
+[this issue](https://github.com/psf/requests/issues/2690) for more background):
+
+```shell
+git clone -c fetch.fsck.badTimezone=ignore https://github.com/psf/requests.git
+```
+
+You can also apply this setting to your global Git config:
+
+```shell
+git config --global fetch.fsck.badTimezone ignore
+```
+
+---
+
+[![Kenneth Reitz](https://raw.githubusercontent.com/psf/requests/main/ext/kr.png)](https://kennethreitz.org) [![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)
+
+
+
+
+* Other Licenses *
+MIT
+
+* Copyrights *
+MIT
+- Copyright (c) 2008-2011 Andrey Petrov and contributors (see CONTRIBUTORS.txt),
+
+* Package Info *
+
+Authors: me@kennethreitz.org
+Package Manager: Pip
+Project URL: https://requests.readthedocs.io
+Package Download URL: https://files.pythonhosted.org/packages/ac/c3/e2a2b89f2d3e2179abd6d00ebd70bff6273f37fb3e0cc209f48b39d00cbf/requests-2.34.2.tar.gz
+Dependency Path: requests
+* Notice File(s) *
+NOTICE
+Requests
+Copyright 2019 Kenneth Reitz
+
+
+--------------------------------------------------------------------------------
+Package Title: urllib3 (2.8.0)
+
+Package Locator: pip+urllib3$2.8.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+HTTP library with thread-safe connection pooling, file post, and more.
+
+* Declared Licenses *
+MIT
+
+* Copyrights *
+MIT
+- Copyright (c) 2008-2020 Andrey Petrov and contributors.
+
+* Package Info *
+
+Authors: Andrey Petrov <andrey.petrov@shazow.net>
+Package Manager: Pip
+Project URL: https://pypi.org/project/urllib3/
+Package Download URL: https://files.pythonhosted.org/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz
+Dependency Path: urllib3
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
