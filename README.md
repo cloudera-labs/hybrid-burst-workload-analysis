@@ -12,13 +12,32 @@ premises.
 
 ## Disclaimer
 
+This is a Cloudera Labs project. Cloudera Labs projects are community-driven and
+experimental. They are not covered by the Cloudera enterprise support agreements
+or SLAs. To report a problem or to ask a question, open a GitHub issue.
+
 Please read the following before proceeding.  Cloudera, Inc. (“Cloudera”) makes this software available as an open source tool for the convenience of its users.  Although Cloudera expects that the tool will help users analyze workloads for potential cloud-onboarding, Cloudera makes the tool available “as is” and without any warranty or support.  By downloading and using this tool, you acknowledge the foregoing statement and agree that Cloudera is not responsible or liable in any way for your use of the tool.
 
-## Requirements
+## Prerequisites
 
+- Linux or macOS, with `make` and a POSIX shell.
 - Python 3.10 or later.
+- A Cloudera on premises cluster: CDP Private Cloud Base 7.1.9 or 7.3.x.
 - Read access to the Cloudera Manager API (for Impala).
 - Read access to the Spark History Server (for Spark).
+
+## Quick Start
+
+```bash
+git clone https://github.com/cloudera-labs/hybrid-burst-workload-analysis.git
+cd hybrid-burst-workload-analysis
+make install                  # make a virtual environment in .venv
+cp .env.example .env          # then set the values for your cluster, see Setup
+make download ENGINE=spark    # get the last 7 days of history
+make process ENGINE=spark
+make ranking ENGINE=spark     # the workloads, ranked
+make summary ENGINE=spark     # the overview
+```
 
 ## Setup
 
@@ -104,7 +123,12 @@ To share a saved ranking, run `make compress-ranking`. That bundles
 The [docs](docs/README.md) folder explains what each command prints and how to
 read it.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Each commit must have a DCO sign-off
+(`git commit -s`).
+
 ## License
 
 This project uses the Apache License 2.0. See [LICENSE](LICENSE). The
-[NOTICE](NOTICE) file lists the third-party packages and their licenses.
+[NOTICE.txt](NOTICE.txt) file lists the third-party packages and their licenses.
