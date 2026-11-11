@@ -152,7 +152,8 @@ tpcds-sidecar:
 # per-query split is wrong, and the timings below it are not interpretable. Exits
 # non-zero in that case, so it works as a campaign gate.
 #   make baseline-comparison FEATURES=<results>/features/<label>/spark
-PUBLISHED_DATA ?= $(HOME)/prj/akanto-cldr/transport-aware-spark-model/data
+# The default is a clone of transport-aware-spark-model next to this repository.
+PUBLISHED_DATA ?= $(CURDIR)/../transport-aware-spark-model/data
 
 baseline-comparison:
 	@test -n "$(FEATURES)" || { echo "Set FEATURES=<path to a model_features/spark dir>"; exit 1; }
@@ -223,7 +224,8 @@ endif
 #   make tpcds-aggregation
 #   make tpcds-aggregation TPCDS_DIR=/path/to/transport-aware-spark-model/data
 
-TPCDS_DIR ?= $(HOME)/prj/akanto-cldr/transport-aware-spark-model/data
+# The default is a clone of transport-aware-spark-model next to this repository.
+TPCDS_DIR ?= $(CURDIR)/../transport-aware-spark-model/data
 
 tpcds-aggregation:
 	$(PYTHON) -m src.collection.analysis.tpcds_aggregation --tpcds-dir $(TPCDS_DIR)

@@ -35,7 +35,7 @@ The published dataset lives in the model repository and is *read only* here.
 Usage:
     python -m src.collection.analysis.baseline_comparison \
         --features <results>/features/<label>/spark \
-        --published ~/prj/akanto-cldr/transport-aware-spark-model/data
+        --published ../transport-aware-spark-model/data
 """
 
 from __future__ import annotations
@@ -48,7 +48,9 @@ import sys
 from pathlib import Path
 from typing import Any, Callable, Optional
 
-_DEFAULT_PUBLISHED = Path.home() / "prj/akanto-cldr/transport-aware-spark-model/data"
+# The default is a clone of transport-aware-spark-model next to this repository.
+# parents[3] is the repository root: analysis -> collection -> src -> root.
+_DEFAULT_PUBLISHED = Path(__file__).resolve().parents[3].parent / "transport-aware-spark-model" / "data"
 _BASELINE_MARKER = 999.0
 
 #: Columns compared per query, as ``(collected field, published field, label,

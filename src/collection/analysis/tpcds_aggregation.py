@@ -42,7 +42,7 @@ protocol ``verify_aggregation`` uses on the production trace.
 
 Usage:
     python -m src.collection.analysis.tpcds_aggregation
-    python -m src.collection.analysis.tpcds_aggregation --tpcds-dir ~/prj/akanto-cldr/transport-aware-spark-model/data
+    python -m src.collection.analysis.tpcds_aggregation --tpcds-dir ../transport-aware-spark-model/data
 """
 
 from __future__ import annotations
@@ -64,7 +64,9 @@ from src.collection.analysis.verify_aggregation import (
     compute_metrics,
 )
 
-_DEFAULT_TPCDS = Path.home() / "prj/akanto-cldr/transport-aware-spark-model/data"
+# The default is a clone of transport-aware-spark-model next to this repository.
+# parents[3] is the repository root: analysis -> collection -> src -> root.
+_DEFAULT_TPCDS = Path(__file__).resolve().parents[3].parent / "transport-aware-spark-model" / "data"
 
 _CUMULATIVE = "Cumulative sum"
 _PUBLISHED = "Published groups"
